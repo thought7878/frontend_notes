@@ -1,4 +1,12 @@
 
+## 3大块
+- 绘制
+- 排版（layout）
+- 交互（animation）
+
+## animation
+
+
 ## 盒子模型
 ### box-sizing:content-box
 ![](./1.png)
