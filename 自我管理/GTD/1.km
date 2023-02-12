@@ -1,0 +1,94 @@
+{
+    "root": {
+        "data": {
+            "id": "cqfpbegsb0w0",
+            "created": 1676115386142,
+            "text": "GTD"
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "cqfpdm8r0hc0",
+                    "created": 1676115559799,
+                    "text": "目的",
+                    "layout_mind_offset": {
+                        "x": -64.99999741713214,
+                        "y": -65.83333071735177
+                    },
+                    "expandState": "expand"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cqfpdqpp8280",
+                            "created": 1676115569531,
+                            "text": "目的 1:清空大脑，不混乱"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cqfpdxzyieg0",
+                            "created": 1676115585388,
+                            "text": "目的 2:明确知道下一步应该做什么"
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "cqfpe892w6o0",
+                    "created": 1676115607708,
+                    "text": "topic",
+                    "layout_mind_offset": {
+                        "x": 324.99998708566085,
+                        "y": 88.33332982328221
+                    },
+                    "expandState": "expand"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cqfpetyo0v40",
+                            "created": 1676115654967,
+                            "text": "捕获（capture）",
+                            "layout_right_offset": {
+                                "x": 250.8333233661126,
+                                "y": -37.49999850988394
+                            }
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cqfpfnlgztc0",
+                            "created": 1676115719473,
+                            "text": "明晰（clarify）",
+                            "layout_right_offset": {
+                                "x": 242.49999036391606,
+                                "y": -38.33333181010369
+                            }
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cqfpgw9qyqo0",
+                            "created": 1676115816719,
+                            "text": "组织（organize）",
+                            "layout_right_offset": {
+                                "x": 249.99999006589297,
+                                "y": -33.3333320087857
+                            }
+                        },
+                        "children": []
+                    }
+                ]
+            }
+        ]
+    },
+    "template": "default",
+    "theme": "fresh-blue",
+    "version": "1.4.43"
+}
