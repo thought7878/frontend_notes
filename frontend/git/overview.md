@@ -134,7 +134,8 @@ $ git branch --track [branch-name] [remote-branch]
 
 ##### 删
 # 删除本地分支
-git branch -d <branch-nane>
+git branch -d <branch-name>
+git branch -D <branch-name> #强制删除
 
 ##### 改
 # 重新命名分支
@@ -172,9 +173,53 @@ $ git branch -dr [remote/branch]
 
 ## 工作中使用 Git 解决问题的场景
 
-### git rebase 让你的提交记录更加清晰可读
+### git rebase 让提交记录更加清晰可读
 
-#### git rebase 的使用
+#### 修改 提交的信息
+
+```bash
+# -i：interaction
+git rebase -i [要修改提交信息的commit的父级commit hash]
+#r, reword <提交> = 使用提交，但编辑提交说明
+```
+
+#### 合并 连续的 commit
+
+```bash
+# -i：interaction
+git rebase -i [要合并的最早commit的父级commit hash]
+
+# 将 ddc9654 合并到 cc33542
+pick cc33542 add 4.js
+s ddc9654 rebase: 4.js #s, squash <提交> = 使用提交，但挤压到前一个提交
+
+```
+
+#### 合并 间隔的 commit
+
+```bash
+###### 将 commit 5 合并到 commit 1
+# commit 5 (hash5)
+# commit 4 (hash4)
+# commit 3 (hash3)
+# commit 2 (hash2)
+# commit 1 (hash1)
+git rebase -i [hash1]
+# 将 commit 5 合并到 commit 1
+pick hash1 commit 1
+s    hash5 commit 5   #s, squash <提交> = 使用提交，但挤压到前一个提交
+pick hash4 commit 4
+pick hash3 commit 3
+pick hash2 commit 2
+
+#
+git rebase --skip
+
+```
+
+![图 4](../../images/8d19c93a93f305d5abfcc5e954655aa67a3c48fe8609e03f3da95ae3943da69a.png)
+
+![图 5](../../images/f52e26646dbd836bf078e16f761a607bcf2cccf3a187621dd28fe00338cd6a63.png)
 
 rebase(变基)，作用和 merge 很相似，用于把一个分支的修改合并到当前分支上。
 
